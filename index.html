@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Keep Pivoting — Be the answer AI gives.</title>
+<meta name="description" content="Keep Pivoting is an AI-search agency (AEO / GEO). We make companies the answer when buyers ask Claude, ChatGPT, Gemini and Perplexity. Full site launching shortly.">
+<meta name="theme-color" content="#0B0B0C">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://keeppivoting.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keep Pivoting">
+<meta property="og:title" content="Keep Pivoting — Be the answer AI gives.">
+<meta property="og:description" content="AI-search agency (AEO / GEO). We make companies the answer when buyers ask AI.">
+<meta property="og:url" content="https://keeppivoting.com/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Keep Pivoting — Be the answer AI gives.">
+<meta name="twitter:description" content="AI-search agency (AEO / GEO).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230B0B0C'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%23F0A83C' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='6' fill='%23F0A83C'/%3E%3Cline x1='50' y1='14' x2='50' y2='26' stroke='%23F0A83C' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  @font-face{font-family:'Space Grotesk';font-style:normal;font-weight:300 700;font-display:swap;src:url('./fonts/SpaceGrotesk-var.woff2') format('woff2');}
+  @font-face{font-family:'Space Mono';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/SpaceMono-400.woff2') format('woff2');}
+  @font-face{font-family:'Space Mono';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/SpaceMono-700.woff2') format('woff2');}
+  @font-face{font-family:'Fraunces';font-style:normal;font-weight:300 700;font-display:swap;src:url('./fonts/Fraunces-Roman-var.woff2') format('woff2');}
+  @font-face{font-family:'Fraunces';font-style:italic;font-weight:300 700;font-display:swap;src:url('./fonts/Fraunces-Italic-var.woff2') format('woff2');}
+
+  :root{
+    --ink:#0B0B0C; --paper:#F4EEE4; --steel:#7C848E; --steel-dim:#565C64;
+    --amber:#F0A83C;
+    --grotesk:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;
+    --serif:'Fraunces',Georgia,serif;
+    --mono:'Space Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  html{-webkit-text-size-adjust:100%;overflow-x:hidden}
+  body{background:var(--ink);color:var(--paper);font-family:var(--grotesk);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow:hidden;position:relative}
+  .atmos{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .atmos .grid{position:absolute;inset:-2px;background-image:linear-gradient(rgba(244,238,228,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(244,238,228,.045) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(120% 100% at 50% 42%,transparent 26%,#000 92%);mask-image:radial-gradient(120% 100% at 50% 42%,transparent 26%,#000 92%);opacity:.5}
+  .atmos .glow{position:absolute;inset:0;background:radial-gradient(44% 38% at 50% 45%,rgba(240,168,60,.13),transparent 66%),radial-gradient(80% 60% at 50% 26%,rgba(200,120,40,.06),transparent 70%);animation:breathe 9s ease-in-out infinite}
+  .atmos .vignette{position:absolute;inset:0;background:radial-gradient(130% 120% at 50% 42%,transparent 42%,rgba(0,0,0,.6) 100%)}
+  .atmos .grain{position:absolute;inset:-50%;width:200%;height:200%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.05;mix-blend-mode:overlay}
+  @keyframes breathe{0%,100%{opacity:.8}50%{opacity:1.05}}
+  .stage{position:relative;z-index:1;min-height:100svh;min-height:100dvh;display:flex;flex-direction:column;padding:clamp(20px,3.4vw,40px) clamp(22px,5vw,64px)}
+  .top{display:flex;align-items:center;justify-content:space-between;gap:16px;min-width:0}
+  .mark{display:flex;align-items:center;gap:12px;color:var(--paper);min-width:0}
+  .mark svg{flex:none}
+  .mark .nm{font-family:var(--mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--steel);white-space:nowrap}
+  .top .status{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);display:flex;align-items:center;gap:9px;white-space:nowrap}
+  .top .status .live{width:6px;height:6px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px 1px rgba(240,168,60,.7);animation:pulse 2.4s ease-in-out infinite;flex:none}
+  @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+  .hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:clamp(18px,3vh,30px);min-width:0}
+  .eyebrow{font-family:var(--mono);font-size:clamp(11px,1.05vw,13px);letter-spacing:.32em;text-transform:uppercase;color:var(--steel);max-width:100%}
+  .eyebrow b{color:var(--amber);font-weight:400}
+  .wordmark{font-family:var(--grotesk);font-weight:500;font-size:clamp(3.15rem,12.4vw,9.75rem);line-height:.9;letter-spacing:-.045em;color:var(--paper);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;column-gap:.28em;row-gap:0;max-width:100%}
+  .wordmark .word{white-space:nowrap;display:inline-flex;align-items:center}
+  .dial{display:inline-flex;align-items:center;justify-content:center;width:.82em;height:.82em;margin:0 .012em;transform:translateY(.03em);filter:drop-shadow(0 0 10px rgba(240,168,60,.4))}
+  .dial svg{width:100%;height:100%;display:block;overflow:visible}
+  .dial .hand{transform-box:view-box;transform-origin:50px 50px;animation:sweep 7.5s cubic-bezier(.7,0,.3,1) infinite}
+  @keyframes sweep{0%{transform:rotate(0)}42%{transform:rotate(270deg)}50%{transform:rotate(270deg)}92%{transform:rotate(540deg)}100%{transform:rotate(540deg)}}
+  .subhead{font-family:var(--serif);font-weight:340;font-style:normal;font-size:clamp(1.5rem,3.6vw,2.6rem);line-height:1.12;letter-spacing:-.01em;color:var(--paper);max-width:20ch}
+  .subhead em{font-style:italic;color:var(--amber)}
+  .subline{font-family:var(--mono);font-weight:400;font-size:clamp(1rem,1.9vw,1.24rem);letter-spacing:.005em;color:var(--paper);max-width:34ch;line-height:1.5;opacity:.9}
+  .subline .stop{color:var(--amber)}
+  .cta{display:inline-flex;align-items:center;gap:.62em;margin-top:clamp(2px,1vh,8px);background:var(--amber);color:#160d02;font-family:var(--grotesk);font-weight:600;font-size:1.02rem;letter-spacing:.005em;padding:.82em 1.5em;border-radius:100px;text-decoration:none;box-shadow:0 0 0 1px rgba(240,168,60,.22),0 10px 42px -10px rgba(240,168,60,.35);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease,background .35s ease;will-change:transform}
+  .cta .arw{transition:transform .35s cubic-bezier(.2,.7,.2,1);display:inline-block}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(240,168,60,.4),0 16px 56px -10px rgba(240,168,60,.5);background:#f4b855}
+  .cta:hover .arw{transform:translateX(4px)}
+  .cta:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+  .foot{display:flex;align-items:center;justify-content:space-between;gap:8px 18px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--steel-dim);min-width:0}
+  .rise{opacity:0;transform:translateY(16px);animation:rise 1s cubic-bezier(.2,.7,.2,1) forwards}
+  .d1{animation-delay:.08s}.d2{animation-delay:.20s}.d3{animation-delay:.34s}.d4{animation-delay:.48s}.d5{animation-delay:.62s}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @media (max-width:600px){.top .status .txt{display:none}.eyebrow .tail{display:none}.foot{font-size:10px;letter-spacing:.08em;justify-content:center;gap:4px 14px}.foot .tail{display:none}.subline{max-width:26ch}}
+  @media (prefers-reduced-motion:reduce){.dial .hand{animation:none;transform:rotate(48deg)}.glow,.top .status .live{animation:none}.rise{animation:none;opacity:1;transform:none}.cta{transition:none}}
+</style>
+</head>
+<body>
+  <div class="atmos" aria-hidden="true"><div class="grid"></div><div class="glow"></div><div class="vignette"></div><div class="grain"></div></div>
+  <div class="stage">
+    <header class="top">
+      <div class="mark rise d1">
+        <svg width="26" height="26" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <circle cx="50" cy="50" r="34" stroke="#F0A83C" stroke-width="6"/>
+          <circle cx="50" cy="50" r="6.5" fill="#F0A83C"/>
+          <line x1="50" y1="10" x2="50" y2="24" stroke="#F0A83C" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <span class="nm">Keep&nbsp;Pivoting</span>
+      </div>
+      <div class="status rise d1"><span class="txt">AI-search agency</span><span class="live" aria-hidden="true"></span></div>
+    </header>
+    <main class="hero">
+      <p class="eyebrow rise d2">AEO&nbsp;/&nbsp;GEO<span class="tail">&nbsp;&nbsp;<b>·</b>&nbsp;&nbsp;Direction, not just speed</span></p>
+      <h1 class="wordmark rise d3">
+        <span class="word">Keep</span>
+        <span class="word">Piv<span class="dial"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <circle cx="50" cy="50" r="40" stroke="#F0A83C" stroke-width="6"/>
+          <circle cx="50" cy="50" r="7" fill="#F0A83C"/>
+          <line x1="50" y1="2" x2="50" y2="16" stroke="#F0A83C" stroke-width="6" stroke-linecap="round"/>
+          <g class="hand">
+            <path d="M 50 10 A 40 40 0 0 1 90 50" stroke="#F4EEE4" stroke-width="6" stroke-linecap="round"/>
+            <path d="M 83.7 39.5 L 90.5 50 L 79.5 52.3 Z" fill="#F4EEE4"/>
+          </g>
+        </svg></span>ting</span>
+      </h1>
+      <p class="subhead rise d4">Be the answer AI gives when your buyers <em>ask</em>.</p>
+      <a class="cta rise d5" href="https://cal.com/keep-pivoting/30min">Book a call <span class="arw" aria-hidden="true">&rarr;</span></a>
+    </main>
+    <footer class="foot rise d5">
+      <span class="l">Keep&nbsp;Pivoting<span class="tail"> — AI-search agency</span></span>
+      <span class="r">Full&nbsp;site&nbsp;launching&nbsp;shortly</span>
+    </footer>
+  </div>
+</body>
+</html>
