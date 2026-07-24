@@ -1,0 +1,30 @@
+# Keep Pivoting
+
+> An AI-search agency (AEO / GEO). We make companies the answer when buyers ask AI assistants like ChatGPT, Claude, Gemini and Perplexity — by building sites those models can fetch, read, quote and rank. Speed is a commodity; direction is scarce, and direction is what we charge for.
+
+Tagline: Be the answer AI gives.
+Manifesto: Pivot toward the better, or get out of the market.
+
+## What we sell
+- The Answer Site — $2,500 one-time. A site AI can fetch, read, quote and rank: real static HTML, JSON-LD schema, llms.txt, robots that say yes, and answer-first copy. Live in about two weeks. Not "live" until a real AI can fetch it.
+- The Authority Build — from $5,000 one-time. Built from the ground up to make you the name AI recommends in your category; deeper entity + schema work and a launch set of the pages AI cites.
+- Momentum retainer — $1,000/mo, or $10,000/yr with two months free. ~8 AEO articles/month, LinkedIn + X in your voice, schema and llms.txt upkeep, and a monthly AI-visibility scoreboard across ChatGPT, Claude, Gemini and Perplexity.
+- Dominance retainer — $2,000/mo, or $20,000/yr with two months free. Everything in Momentum plus original research AI cites, digital PR + citation building, competitor tracking, and continuous CRO (you approve every change).
+- Custom scope is quoted on a call.
+
+## How AI decides who to name (our thesis)
+1. Machine-legible structure — real static HTML, JSON-LD schema (Organization, FAQPage, ItemList), an llms.txt, and robots that allow AI fetchers. If a model can't cleanly read you, you don't exist to it.
+2. Answer-first content — extractable, quotable, and shaped around the exact questions buyers ask their AI.
+3. Off-site authority — the citations, directories and mentions AI already trusts, so you become the name it repeats.
+
+## Contact
+- Book a call: https://cal.com/keep-pivoting/30min
+- Email: moksh@temporaryperspective.com
+
+## Examples
+Concept rebuilds demonstrating our approach (unsolicited; not client engagements unless stated): https://keeppivoting.com/#examples
+
+## Facts
+- Category: AEO / GEO (Answer Engine Optimization / Generative Engine Optimization).
+- We verify AI-readability with a real AI fetch before a site counts as live.
+- Serves clients worldwide.
