@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keep Pivoting — Homepage Content Wireframe</title>
+<style>
+  :root{
+    --beige:#F1E9D8;
+    --ink:#1e1b16;
+    --muted:#6f6a5e;
+    --line:#cabfa6;
+    --ph:#7c7568;
+    --ph-bd:#a89d85;
+  }
+  *{box-sizing:border-box;}
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    margin:0;
+    background:var(--beige);
+    color:var(--ink);
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:17px;
+    line-height:1.7;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:0 24px 96px;
+  }
+
+  /* wireframe banner */
+  .banner{
+    max-width:720px;
+    margin:0 auto;
+    border:1px solid var(--ink);
+    padding:10px 16px;
+    margin-top:28px;
+    margin-bottom:44px;
+    font-size:13px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--ink);
+  }
+  .banner strong{ letter-spacing:.08em; }
+
+  /* sections */
+  section{
+    padding-top:40px;
+    margin-top:40px;
+    border-top:1px solid var(--line);
+  }
+  section:first-of-type{ border-top:none; margin-top:0; padding-top:0; }
+
+  .label{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    font-weight:700;
+    color:var(--muted);
+    margin:0 0 14px;
+  }
+
+  h2{
+    font-size:27px;
+    line-height:1.28;
+    font-weight:700;
+    margin:0 0 14px;
+  }
+  h3{
+    font-size:19px;
+    line-height:1.35;
+    font-weight:700;
+    margin:26px 0 6px;
+  }
+  .sub{
+    font-size:20px;
+    color:var(--ink);
+    margin:0 0 16px;
+  }
+  p{ margin:0 0 15px; }
+  .muted{ color:var(--muted); }
+  .small{ font-size:14px; line-height:1.6; }
+  a{ color:var(--ink); }
+
+  /* placeholder box (NOT an image) */
+  .ph{
+    border:1px dashed var(--ph-bd);
+    color:var(--ph);
+    font-style:italic;
+    font-size:14px;
+    line-height:1.55;
+    padding:14px 16px;
+    border-radius:4px;
+    margin:18px 0;
+  }
+
+  /* CTA button (text link, bordered) */
+  .btn{
+    display:inline-block;
+    border:1.5px solid var(--ink);
+    padding:9px 20px;
+    font-weight:700;
+    text-decoration:none;
+    border-radius:4px;
+    margin:6px 0;
+  }
+  .cta-url{ font-size:13px; color:var(--muted); margin:6px 0 0; }
+
+  /* form */
+  .form{
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:20px 20px 22px;
+    margin:18px 0;
+  }
+  .field{ margin:0 0 14px; }
+  .field label{
+    display:block;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    color:var(--muted);
+    margin:0 0 5px;
+  }
+  .field .box{
+    border:1px dashed var(--ph-bd);
+    border-radius:4px;
+    padding:9px 12px;
+    color:var(--ph);
+    font-style:italic;
+    font-size:14px;
+  }
+
+  /* lists */
+  ul.plain{ margin:12px 0 15px; padding-left:22px; }
+  ul.plain li{ margin:0 0 7px; }
+
+  ul.examples{ list-style:none; margin:14px 0 0; padding:0; }
+  ul.examples li{
+    padding:11px 0;
+    border-bottom:1px solid var(--line);
+  }
+  ul.examples li a{ font-weight:700; font-size:18px; }
+  ul.examples li .url{ display:block; color:var(--muted); font-size:13px; font-style:normal; margin-top:2px; }
+
+  ol.steps{ margin:12px 0 0; padding-left:22px; }
+  ol.steps li{ margin:0 0 14px; }
+  ol.steps li strong{ display:inline; }
+
+  /* tables */
+  .tablewrap{ overflow-x:auto; margin:16px 0; }
+  table{ border-collapse:collapse; width:100%; font-size:16px; }
+  th, td{
+    border:1px solid var(--line);
+    padding:10px 12px;
+    text-align:left;
+    vertical-align:top;
+  }
+  th{ font-weight:700; background:transparent; }
+  td .price{ font-weight:700; white-space:nowrap; }
+
+  .callout{
+    border:1px solid var(--ph-bd);
+    border-radius:6px;
+    padding:16px 18px;
+    margin:20px 0;
+    font-size:15.5px;
+  }
+
+  .manifesto{
+    font-size:20px;
+    line-height:1.55;
+  }
+
+  /* footer */
+  footer{
+    border-top:1px solid var(--line);
+    margin-top:40px;
+    padding-top:40px;
+  }
+  .nav{ font-size:15px; line-height:2; }
+  .nav a{ margin-right:6px; }
+  .disclaimer{ font-size:13.5px; color:var(--muted); margin-top:18px; line-height:1.6; }
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <strong>Content wireframe</strong> — reviewing words + structure. Design comes later.
+</div>
+
+<div class="wrap">
+
+  <!-- 1. HERO -->
+  <section id="hero">
+    <p class="label">① Hero</p>
+    <h2>When AI gets asked, does your name come up?</h2>
+    <p class="sub">Your buyers stopped Googling. They ask AI now. It already has an answer about you, and you have never seen it.</p>
+    <a class="btn" href="https://cal.com/keep-pivoting/30min">Book a call</a>
+    <p class="cta-url">https://cal.com/keep-pivoting/30min</p>
+    <div class="ph">[ visual goes here: the pivot mark ]</div>
+    <div class="ph">[ stat goes here: a credible, cited source on falling Google search / rising AI-answer usage (2025–26) — to be sourced, never invented ]</div>
+  </section>
+
+  <!-- 2. THE MOMENT -->
+  <section id="moment">
+    <p class="label">② The moment</p>
+    <h2>Every business gets one moment where the ground moves.</h2>
+    <p>It never announces itself. There is no memo, no bad quarter, no obvious villain. The phone rings the way it always has. The same customers find you the same way they always did. Everything feels permanent, right up until it isn't.</p>
+    <p>Underneath all of that, the ground starts to move. The way people find you changes. Quietly, while your numbers still look fine, the path that brought you every customer you have is being replaced by a different one.</p>
+    <p>Some businesses feel it coming and turn early. Some feel it and freeze. And a few never feel it at all, until the customers simply stop arriving and nobody inside can say when it started.</p>
+    <p>That one moment decides everything. Years of being good count for nothing if you stand still while the ground moves out from under you.</p>
+  </section>
+
+  <!-- 3. IT'S HAPPENED BEFORE -->
+  <section id="proof">
+    <p class="label">③ It has happened before</p>
+    <h2>We already know how this story ends. We've watched it four times.</h2>
+
+    <p><strong>Kodak</strong> built the first digital camera. Their own engineer, in 1975. The prototype worked, the executives saw it, and they buried it, because every digital photo was a roll of film they would never sell. They understood the threat perfectly. They just chose to protect the old thing instead of becoming the new one. Kodak filed for bankruptcy in 2012.</p>
+
+    <p><strong>Blockbuster</strong> had thousands of stores and the chance to buy a small, struggling DVD-by-mail startup called Netflix for fifty million dollars. The room laughed it off. You already know which of those two names is still around.</p>
+
+    <p><strong>Netflix</strong> was that startup. Red envelopes in the mail, and it was working. Then they watched streaming coming and did the hardest thing a company can do: they walked away from the business that was paying the bills, before it forced them to. That is the only reason you have heard of them.</p>
+
+    <p><strong>Apple</strong> was ninety days from bankruptcy in 1997. Not struggling. Ninety days from gone. Steve Jobs came back, cut most of the products, and aimed what was left at a future nobody else could see yet. The iMac. Then the iPod. Then the iPhone. Same company, same people. One decision to move.</p>
+
+    <p>Line the four of them up and the lesson is almost insulting in how simple it is. Kodak had the better technology. Blockbuster had the bigger business. Being good was never what saved anyone. Kodak and Blockbuster were the best in the world at the thing the world was walking away from. Netflix and Apple moved when the ground moved. That is the whole difference between the companies you still use and the ones your kids will never hear of.</p>
+
+    <div class="ph">[ visual goes here: the four of them, two graves and two crowns — who moved, who didn't ]</div>
+  </section>
+
+  <!-- 4. THE GROUND IS MOVING AGAIN -->
+  <section id="now">
+    <p class="label">④ The ground is moving again</p>
+    <h2>It is happening again. Right now. Under you.</h2>
+    <p>Think about the last time you needed a recommendation. A tool, a lawyer, a fund, a plumber. Did you open Google and work down ten blue links? Or did you ask ChatGPT, read the three names it gave you, and go with one of them?</p>
+    <p>That is the shift. It already happened to you. It is happening to your customers today, while your website sits there looking perfectly fine.</p>
+    <p>Almost nobody has clocked what it means yet. When a buyer asks AI who is best in your field, the AI answers. Confidently. It names a few companies and skips everyone else. There is no page two to claw your way onto. You are in the answer, or you are nowhere.</p>
+    <p>Most businesses are nowhere, and they have no idea. Their site looks great to a human and reads as a blank wall to the thing now doing the recommending. They are Kodak in 1975: holding the future in their hands, certain the ground is still solid.</p>
+    <div class="ph">[ visual goes here: a Google search greyed out, next to an AI answer naming three firms — and yours isn't one ]</div>
+  </section>
+
+  <!-- 5. ASK YOUR OWN AI -->
+  <section id="report">
+    <p class="label">⑤ Ask your own AI</p>
+    <h2>So go find out. Right now, before you read one more word.</h2>
+    <p>Open ChatGPT, or Claude, or Perplexity. Ask it what your customers ask it: who are the best [your kind of business] for [the thing you actually do]? Then look for your name.</p>
+    <p>If it is there, and you didn't feed it your own name to put it there, then good. Honestly, good for you. You are ahead of almost everyone reading this. Close the tab with our blessing and get back to work.</p>
+    <p>If it is not there, sit with that for a second. The buyers you want are asking that exact question right now and being handed your competitors. Not because they are better than you. Because the AI can see them and cannot see you.</p>
+    <p>That is Kodak's moment. And it is yours. The difference is that you still have time, and you still have a choice about what happens next.</p>
+
+    <h3>Or let us run the check for you.</h3>
+    <p>Don't want to test it yourself? We will do it properly. Tell us where you live online, and we will ask ChatGPT, Claude, Gemini, and Perplexity about your space, then send you a plain report: where you come up, where you don't, and why. Built by hand, for your actual business. Not a template. Not a sales deck.</p>
+    <div class="form">
+      <div class="field">
+        <label>Website</label>
+        <div class="box">yourcompany.com</div>
+      </div>
+      <div class="field">
+        <label>LinkedIn</label>
+        <div class="box">linkedin.com/company/…</div>
+      </div>
+      <div class="field">
+        <label>X</label>
+        <div class="box">@yourhandle</div>
+      </div>
+      <div class="field">
+        <label>WhatsApp</label>
+        <div class="box">+country number</div>
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <div class="box">you@yourcompany.com</div>
+      </div>
+      <a class="btn" href="#">Send me my report</a>
+    </div>
+    <p class="small muted">We build it by hand and email it to you. That is the whole transaction. If you want to talk after, the call is there. If not, keep the report.</p>
+  </section>
+
+  <!-- 6. THAT'S WHAT WE DO -->
+  <section id="what-we-do">
+    <p class="label">⑥ That's what we do</p>
+    <h2>That is the whole reason we exist.</h2>
+    <p>We are not here to sell you a website. You don't need one. You can build a website this afternoon with the same AI your customers are using, and so can everyone else, which is exactly why a website barely counts for anything anymore.</p>
+    <p>Being the answer counts. Being the name the AI says back. That is the thing almost nobody can do on purpose, and it is the only thing we do.</p>
+    <p>Most people assume AI recommends the best-looking site. It doesn't. It recommends the one it can actually read. Most sites are built for human eyes: photos, animation, and text buried inside JavaScript a crawler never sees. The AI shows up, reads nothing, and moves on to a competitor it can read. We build the other kind. Clean structure, real text, answers written the way people actually ask their questions, so when the AI comes looking, it finds you, understands you, and repeats you.</p>
+    <p>That is the pivot. It is not a redesign. It is a move from invisible to recommended, made on purpose, while your competitors still think this is a conversation about how their homepage looks.</p>
+    <p>So let us help you pivot toward a better future. The market already moved. Moving with it is the whole job, and it is the one we are built for.</p>
+    <div class="ph">[ visual goes here: a site the AI can read vs a site it can't — same business, two outcomes ]</div>
+  </section>
+
+  <!-- 7. WE'VE ALREADY BUILT IT -->
+  <section id="examples">
+    <p class="label">⑦ We've already built it</p>
+    <h2>We have built more than fifty of these already.</h2>
+    <p>Not mockups. Real, deployed sites, each one built from the first line to be read and ranked by AI. Here is a sample. Open any of them and ask your own AI what it makes of it.</p>
+    <div class="ph">[ folder cards / live thumbnails, elevate on hover — design later ]</div>
+    <ul class="examples">
+      <li><a href="https://412-venture-fund.keeppivoting.com">412 Venture Fund</a><span class="url">https://412-venture-fund.keeppivoting.com</span></li>
+      <li><a href="https://qca-ventures.keeppivoting.com">QCA Ventures</a><span class="url">https://qca-ventures.keeppivoting.com</span></li>
+      <li><a href="https://gutter-capital.keeppivoting.com">Gutter Capital</a><span class="url">https://gutter-capital.keeppivoting.com</span></li>
+      <li><a href="https://animal-capital.keeppivoting.com">Animal Capital</a><span class="url">https://animal-capital.keeppivoting.com</span></li>
+      <li><a href="https://nxtp.keeppivoting.com">NXTP</a><span class="url">https://nxtp.keeppivoting.com</span></li>
+      <li><a href="https://pappas-capital.keeppivoting.com">Pappas Capital</a><span class="url">https://pappas-capital.keeppivoting.com</span></li>
+      <li><a href="https://do-ventures.keeppivoting.com">Do Ventures</a><span class="url">https://do-ventures.keeppivoting.com</span></li>
+      <li><a href="https://gessweins-clocks.keeppivoting.com">Gesswein's Clocks</a><span class="url">https://gessweins-clocks.keeppivoting.com</span></li>
+      <li><a href="https://skybound-vc.keeppivoting.com">Skybound VC</a><span class="url">https://skybound-vc.keeppivoting.com</span></li>
+      <li><a href="https://phoenix-vp.keeppivoting.com">Phoenix VP</a><span class="url">https://phoenix-vp.keeppivoting.com</span></li>
+    </ul>
+    <p class="small muted" style="margin-top:14px;">A sample of the set. Each one is live and built to be fetched, read, and quoted by an AI. Design of this gallery comes later; today this is about the words and the work.</p>
+  </section>
+
+  <!-- 8. THE OFFER -->
+  <section id="offer">
+    <p class="label">⑧ The offer</p>
+    <h2>What working with us actually looks like.</h2>
+    <p>Two ways in, depending on how far you want to go.</p>
+
+    <h3>The Landing Page</h3>
+    <p>Where most people start. One long, beautiful page that holds everything about your business, built from the first line to be read and ranked by AI. It is the core of what we do, and it starts around $2,500.</p>
+
+    <h3>The Blog Site</h3>
+    <p>The bigger move. A full site with a content engine behind it, publishing the answers your buyers keep asking AI for, so you don't just surface once, you stay surfaced as your space shifts. It costs more than the landing page, and the right number depends on you, so we work that out together on the call.</p>
+
+    <h3>Then, one plan to stay the answer</h3>
+    <p>Becoming the answer is one job. Staying the answer is another, because AI keeps learning and your competitors keep moving. So we offer one simple ongoing plan that keeps your site current and keeps you in the answer, month after month. We walk you through it on the call. No lock-in, no fine print.</p>
+
+    <p class="muted">We keep the numbers on the call on purpose. A price written on a webpage is a guess about a business we have not met yet. We would rather look at yours and tell you the truth about what it takes.</p>
+
+    <a class="btn" href="https://cal.com/keep-pivoting/30min">Book a call</a>
+    <p class="cta-url">https://cal.com/keep-pivoting/30min</p>
+  </section>
+
+  <!-- 9. WE ARE KEEP PIVOTING -->
+  <section id="manifesto">
+    <p class="label">⑨ We are Keep Pivoting</p>
+    <h2>We are called Keep Pivoting for a reason.</h2>
+    <p class="manifesto">Every business gets one moment where the ground moves. This is yours. The way your customers find you already changed. You can meet that or ignore it, and ignoring it is still a decision you are making right now, today, whether you mean to or not.</p>
+    <p class="manifesto">We took the name Keep Pivoting because the whole thing comes down to one skill: seeing the ground move, and moving with it, again and again, for as long as you are in business. Kodak couldn't. Blockbuster wouldn't. Netflix and Apple did, and they are still here.</p>
+    <p class="manifesto">We exist for this exact moment, the one where a new way of being found quietly replaces the old one and most people have not looked up yet. We help you look up. Then we help you move.</p>
+    <p class="manifesto">Pivot toward the better, or get left behind. There is no third option. There never was.</p>
+    <p style="margin-top:22px;">Book a call. Let's find out where you actually stand, and then let's move.</p>
+    <a class="btn" href="https://cal.com/keep-pivoting/30min">Book a call</a>
+    <p class="cta-url">https://cal.com/keep-pivoting/30min</p>
+  </section>
+
+  <!-- 10. FOOTER -->
+  <footer id="footer">
+    <p class="label">⑩ Footer</p>
+    <div class="nav">
+      <a href="#hero">Home</a> ·
+      <a href="#proof">The Story</a> ·
+      <a href="#examples">Examples</a> ·
+      <a href="#offer">The Offer</a> ·
+      <a href="#report">Free AI-Visibility Report</a> ·
+      <a href="#">Blog</a> ·
+      <a href="#manifesto">Why We Pivot</a> ·
+      <a href="https://cal.com/keep-pivoting/30min">Book a Call</a>
+    </div>
+    <p class="disclaimer">Keep Pivoting is a new agency. Several of the sites shown are independent concept rebuilds we made to demonstrate the work, not paid client engagements. Every claim on this page is meant to be checked. Ask your own AI.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
