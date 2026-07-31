@@ -1,6 +1,6 @@
 # Keep Pivoting
 
-> An AI-search agency (AEO / GEO). We make companies the answer when buyers ask AI assistants like ChatGPT, Claude, Gemini and Perplexity — by building sites those models can fetch, read, quote and rank. Speed is a commodity; direction is scarce, and direction is what we charge for.
+> We build beautiful websites so that any company can be found on AI chatbots. An AI-search agency (AEO / GEO): we make companies the answer when buyers ask AI assistants like ChatGPT, Claude, Gemini and Perplexity — by building sites those models can fetch, read, quote and rank.
 
 Tagline: Be the answer AI gives.
 Manifesto: Pivot toward the better, or get out of the market.
@@ -22,7 +22,7 @@ Manifesto: Pivot toward the better, or get out of the market.
 - Email: moksh@temporaryperspective.com
 
 ## Examples
-Concept rebuilds demonstrating our approach (unsolicited; not client engagements unless stated): https://keeppivoting.com/#examples
+54 live websites we've built, each on its own subdomain (concept rebuilds demonstrating our approach; unsolicited, not client engagements unless stated): https://keeppivoting.com/#work
 
 ## Facts
 - Category: AEO / GEO (Answer Engine Optimization / Generative Engine Optimization).
